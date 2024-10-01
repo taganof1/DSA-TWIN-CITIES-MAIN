@@ -1,0 +1,76 @@
+/* 
+    This file overrides the default Bootstrap styling
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Libre+Franklin:wght@300;400&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+/* Override Bootstrap's primary color */
+:root {
+    --primary: #3498db;
+    --primary-hover: #42a8ed;
+    --sidebar-width: 20rem;
+}
+
+/* Sidebar component */
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: var(--sidebar-width);
+    background-color: #ffffff;
+}
+
+.content {
+    /* Adjust based on width of sidebar */
+    /*margin-left: 250px; */
+    /* Adjust this value based on the width of your sidebar */
+    margin-left: var(--sidebar-width);
+}
+
+
+/* body background color and font styles */
+body {
+    background-color: #ebebeb;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+/* link color */
+a {
+    color: var(--primary);
+}
+
+/* link hover color */
+a:hover {
+    color: #2980b9;
+}
+
+
+/* Card */
+.card {
+    border: none;
+}
+
+/* button styles */
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+/* button hover styles */
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+
+/* form styles */
+.form-control {
+    border-color: var(--primary);
+}
+
+/* form input focus styles */
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.5);
+}
